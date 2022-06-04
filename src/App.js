@@ -1,10 +1,22 @@
 import './App.scss';
-import Test from "./Test";
+import AppRouter from "./components/AppRouter";
+import {Link} from "react-router-dom";
+import React, {useState} from "react";
 
 function App() {
-  return (
+    const [phone, setPhone] = useState('88005553535');
+
+    return (
     <div className="App">
-      <Test/>
+        <nav>
+            <Link to={'/'}>Home | </Link>
+            <Link to={'/about'}>about | </Link>
+            <Link to={'/contact'}>contact | </Link>
+            <Link to={'/products'}>products</Link>
+        </nav>
+        <br/>
+
+      <AppRouter phoneNumber={phone}/>
     </div>
   );
 }
