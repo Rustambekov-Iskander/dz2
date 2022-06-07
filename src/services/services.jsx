@@ -20,3 +20,8 @@ export const getUserById = async (id) => {
     return response.data;
 }
 
+export const createUser = async (user) => {
+    await axios.post("http://159.89.2.247:8003/api/users/signup/", user);
+}
+
+

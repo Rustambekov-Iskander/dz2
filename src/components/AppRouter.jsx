@@ -6,6 +6,7 @@ import Contact from "../pages/contact/Contact";
 import Products from "../pages/products/Products";
 import ProductPage from "../pages/product-page/ProductPage";
 import UserProfile from "../pages/user-profile/UserProfile";
+import SignUp from "../pages/signup/SignUp";
 
 const AppRouter = ({phoneNumber}) => {
     return (
@@ -16,6 +17,7 @@ const AppRouter = ({phoneNumber}) => {
             <Route path="/products/:id" element={<ProductPage />} />
             <Route path="/contact" element={<Contact phone={phoneNumber} />} />
             <Route path="/users/:id" element={<UserProfile />} />
+            <Route path="/users/signup" element={<SignUp />} />
         </Routes>
     );
 };

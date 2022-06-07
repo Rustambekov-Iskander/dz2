@@ -12,7 +12,8 @@ function App() {
             <Link to={'/'}>Home | </Link>
             <Link to={'/about'}>about | </Link>
             <Link to={'/contact'}>contact | </Link>
-            <Link to={'/products'}>products</Link>
+            <Link to={'/products'}>products | </Link>
+            <Link to={'/users/signup'}>signup</Link>
         </nav>
         <br/>
 
