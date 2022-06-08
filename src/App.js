@@ -13,7 +13,8 @@ function App() {
             <Link to={'/about'}>about | </Link>
             <Link to={'/contact'}>contact | </Link>
             <Link to={'/products'}>products | </Link>
-            <Link to={'/users/signup'}>signup</Link>
+            <Link to={'/users/signup'}>signup | </Link>
+            <Link to={'/users/signIn'}>signIn</Link>
         </nav>
         <br/>
 

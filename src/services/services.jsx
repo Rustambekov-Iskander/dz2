@@ -24,4 +24,8 @@ export const createUser = async (user) => {
     await axios.post("http://159.89.2.247:8003/api/users/signup/", user);
 }
 
+export const signInUser = async (user) => {
+    await axios.post("http://159.89.2.247:8003/api/users/signin/", user);
+}
+
 
